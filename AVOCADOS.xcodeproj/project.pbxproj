@@ -11,6 +11,10 @@
 		60E79B17278DDBA700CCBB78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B16278DDBA700CCBB78 /* ContentView.swift */; };
 		60E79B19278DDBA800CCBB78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E79B18278DDBA800CCBB78 /* Assets.xcassets */; };
 		60E79B1C278DDBA800CCBB78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E79B1B278DDBA800CCBB78 /* Preview Assets.xcassets */; };
+		60E79B29278DEB5300CCBB78 /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B28278DEB5300CCBB78 /* AvocadosView.swift */; };
+		60E79B2B278DEB7300CCBB78 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B2A278DEB7300CCBB78 /* RipeningStagesView.swift */; };
+		60E79B2D278DEBAF00CCBB78 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B2C278DEBAF00CCBB78 /* SettingsView.swift */; };
+		60E79B31278DEBEF00CCBB78 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B30278DEBEF00CCBB78 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		60E79B18278DDBA800CCBB78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E79B1B278DDBA800CCBB78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60E79B22278DDDAA00CCBB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		60E79B28278DEB5300CCBB78 /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		60E79B2A278DEB7300CCBB78 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
+		60E79B2C278DEBAF00CCBB78 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60E79B30278DEBEF00CCBB78 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,11 @@
 		60E79B13278DDBA700CCBB78 /* AVOCADOS */ = {
 			isa = PBXGroup;
 			children = (
+				60E79B27278DEB2900CCBB78 /* View */,
+				60E79B26278DEB2100CCBB78 /* Model */,
+				60E79B25278DEB1800CCBB78 /* Data */,
 				60E79B22278DDDAA00CCBB78 /* Info.plist */,
 				60E79B14278DDBA700CCBB78 /* AVOCADOSApp.swift */,
-				60E79B16278DDBA700CCBB78 /* ContentView.swift */,
 				60E79B18278DDBA800CCBB78 /* Assets.xcassets */,
 				60E79B1A278DDBA800CCBB78 /* Preview Content */,
 			);
@@ -67,6 +77,32 @@
 				60E79B1B278DDBA800CCBB78 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60E79B25278DEB1800CCBB78 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		60E79B26278DEB2100CCBB78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60E79B27278DEB2900CCBB78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60E79B16278DDBA700CCBB78 /* ContentView.swift */,
+				60E79B28278DEB5300CCBB78 /* AvocadosView.swift */,
+				60E79B2A278DEB7300CCBB78 /* RipeningStagesView.swift */,
+				60E79B2C278DEBAF00CCBB78 /* SettingsView.swift */,
+				60E79B30278DEBEF00CCBB78 /* AppView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E79B2D278DEBAF00CCBB78 /* SettingsView.swift in Sources */,
 				60E79B17278DDBA700CCBB78 /* ContentView.swift in Sources */,
+				60E79B31278DEBEF00CCBB78 /* AppView.swift in Sources */,
+				60E79B2B278DEB7300CCBB78 /* RipeningStagesView.swift in Sources */,
 				60E79B15278DDBA700CCBB78 /* AVOCADOSApp.swift in Sources */,
+				60E79B29278DEB5300CCBB78 /* AvocadosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
