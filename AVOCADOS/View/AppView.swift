@@ -13,24 +13,24 @@ struct AppView: View {
             AvocadosView()
                 .tabItem({
                     Image("tabicon-branch")
-                    Text("Avocados")
+                    Text("Aguacates")
                 })
             
             ContentView()
                 .tabItem ({
                     Image("tabicon-book")
-                    Text("Recipes")
+                    Text("Recetas")
                 })
             
             RipeningStagesView()
                 .tabItem({
                     Image("tabicon-avocado")
-                    Text("Ripening")
+                    Text("Madurez")
                 })
             SettingsView()
                 .tabItem({
                     Image("tabicon-settings")
-                    Text("Settings")
+                    Text("Configuracion")
                 })
         }//TabView
         .edgesIgnoringSafeArea(.top)
