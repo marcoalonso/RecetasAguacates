@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		605CFACF2790C66200879AE8 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605CFACE2790C66200879AE8 /* HeaderModel.swift */; };
+		605CFAD12790C6C300879AE8 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605CFAD02790C6C300879AE8 /* HeaderData.swift */; };
 		60E79B15278DDBA700CCBB78 /* AVOCADOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B14278DDBA700CCBB78 /* AVOCADOSApp.swift */; };
 		60E79B17278DDBA700CCBB78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B16278DDBA700CCBB78 /* ContentView.swift */; };
 		60E79B19278DDBA800CCBB78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E79B18278DDBA800CCBB78 /* Assets.xcassets */; };
@@ -15,9 +17,12 @@
 		60E79B2B278DEB7300CCBB78 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B2A278DEB7300CCBB78 /* RipeningStagesView.swift */; };
 		60E79B2D278DEBAF00CCBB78 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B2C278DEBAF00CCBB78 /* SettingsView.swift */; };
 		60E79B31278DEBEF00CCBB78 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B30278DEBEF00CCBB78 /* AppView.swift */; };
+		60E79B33278DF62400CCBB78 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B32278DF62400CCBB78 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		605CFACE2790C66200879AE8 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		605CFAD02790C6C300879AE8 /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
 		60E79B11278DDBA700CCBB78 /* AVOCADOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVOCADOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E79B14278DDBA700CCBB78 /* AVOCADOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVOCADOSApp.swift; sourceTree = "<group>"; };
 		60E79B16278DDBA700CCBB78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		60E79B2A278DEB7300CCBB78 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
 		60E79B2C278DEBAF00CCBB78 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		60E79B30278DEBEF00CCBB78 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		60E79B32278DF62400CCBB78 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		60E79B25278DEB1800CCBB78 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				605CFAD02790C6C300879AE8 /* HeaderData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -89,6 +96,7 @@
 		60E79B26278DEB2100CCBB78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				605CFACE2790C66200879AE8 /* HeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 				60E79B2A278DEB7300CCBB78 /* RipeningStagesView.swift */,
 				60E79B2C278DEBAF00CCBB78 /* SettingsView.swift */,
 				60E79B30278DEBEF00CCBB78 /* AppView.swift */,
+				60E79B32278DF62400CCBB78 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +190,9 @@
 				60E79B2B278DEB7300CCBB78 /* RipeningStagesView.swift in Sources */,
 				60E79B15278DDBA700CCBB78 /* AVOCADOSApp.swift in Sources */,
 				60E79B29278DEB5300CCBB78 /* AvocadosView.swift in Sources */,
+				605CFACF2790C66200879AE8 /* HeaderModel.swift in Sources */,
+				605CFAD12790C6C300879AE8 /* HeaderData.swift in Sources */,
+				60E79B33278DF62400CCBB78 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
