@@ -23,21 +23,24 @@ struct ContentView: View {
                         }
                     }
                 }
-                
+                // MARK: - Dishes
+                Text("Platillos")
+                    .fontWeight(.bold)
+                    .modifier(TitleModifier())
+                DishesView()
+                    .frame(maxWidth: 640)
                 
                 
                 // MARK: - Footer
                 VStack(alignment: .center, spacing: 20){
                     Text("Todo acerca de los aguacates!")
-                        .font(.system(.title2,design: .serif))
                         .fontWeight(.bold)
-                        .foregroundColor(Color("ColorGreenAdaptive"))
-                    .padding(8)
+                        .modifier(TitleModifier())
                     Text("Todo lo que querias saber acerca de los aguacates aqui lo encontraras, vamos no tengas miedo a averiguarlo!")
                         .font(.system(.body, design: .serif))
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.gray)
-                        .padding(.horizontal, 40)
+                        .frame(minHeight: 60)
                 }//Vstack
                 .frame(maxWidth: 640)
                 .padding()
@@ -46,6 +49,15 @@ struct ContentView: View {
         }//Scroll
         .edgesIgnoringSafeArea(.all)
         .padding(0)
+    }
+}
+
+struct TitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(.title2,design: .serif))
+            .foregroundColor(Color("ColorGreenAdaptive"))
+        .padding(8)
     }
 }
 
