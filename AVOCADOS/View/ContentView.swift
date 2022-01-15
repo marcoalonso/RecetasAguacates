@@ -95,7 +95,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(headers: headersData, facts: factsData, recipes: recipesData)
         
-            .previewDevice("iPad Pro (9.7-inch)")
+            .previewDevice("iPhone 13")
 .previewInterfaceOrientation(.portrait)
     }
 }

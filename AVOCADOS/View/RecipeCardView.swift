@@ -12,7 +12,9 @@ struct RecipeCardView: View {
     // MARK: - Properties
 
     var recipe: Recipe
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
     
+    @State private var showModal: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 3) {
@@ -29,7 +31,7 @@ struct RecipeCardView: View {
                             .font(Font.title.weight(.light))
                             .foregroundColor(Color.white)
                             .imageScale(.small)
-                        .shadow(color: Color("ColorBlackTransparentLight"), radius: 2, x: 0, y: 0)
+                        .shadow(color: Color("ColorBlackTransparentLight"), radius: 3, x: 0, y: 0)
                         .padding(.trailing, 20)
                         .padding(.top, 22)
                             Spacer()
@@ -53,31 +55,11 @@ struct RecipeCardView: View {
                     .italic()
                 
                 //Rates
-                HStack(alignment: .center, spacing: 5) {
-                    ForEach(1...(recipe.rating), id: \.self) { _ in
-                        Image(systemName: "star.fill")
-                            .font(.body)
-                        .foregroundColor(Color.yellow)
-                    }
-                }
+                RecipeRatingView(recipe: recipe)
                 
                 //Cooking
-                HStack(alignment: .center, spacing: 12){
-                    HStack(alignment: .center, spacing: 2){
-                        Image(systemName: "person.2")
-                        Text("Serves: \(recipe.serves)")
-                    }
-                    
-                    HStack(alignment: .center, spacing: 2){
-                        Image(systemName: "clock")
-                        Text("Prep: \(recipe.preparation)")
-                    }
-                    
-                    HStack(alignment: .center, spacing: 2){
-                        Image(systemName: "flame")
-                        Text("Cooking: \(recipe.cooking)")
-                    }
-                }//Hstack
+                RecipeCookingView(recipe: recipe)
+                
                 .font(.footnote)
                 .foregroundColor(Color.gray)
             }//Vstack
@@ -87,6 +69,13 @@ struct RecipeCardView: View {
         .background(Color.white)
         .cornerRadius(18)
         .shadow(color: Color("ColorBlackTransparentLight"), radius: 8, x: 0, y: 0)
+        .onTapGesture {
+            self.hapticImpact.impactOccurred()
+            self.showModal = true
+        }
+        .sheet(isPresented: self.$showModal){
+            RecipeDetailView(recipe: self.recipe)
+        }
     }
 }
 

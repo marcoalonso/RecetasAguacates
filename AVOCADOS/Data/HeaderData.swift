@@ -21,7 +21,7 @@ let headersData: [Header] = [
     ),
     Header(
       image: "avocado-slice-3",
-      headline: "Nutrientes",
+      headline: "Nutritivos",
       subheadline: "Los aguacates tienen una sorprendente cantidad y diversidad de vitaminas y minerales."
     ),
     Header(
