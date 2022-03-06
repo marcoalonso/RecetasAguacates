@@ -30,6 +30,7 @@
 		60E79B31278DEBEF00CCBB78 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B30278DEBEF00CCBB78 /* AppView.swift */; };
 		60E79B33278DF62400CCBB78 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79B32278DF62400CCBB78 /* HeaderView.swift */; };
 		60FF061227D543490058A116 /* RipineningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FF061127D543480058A116 /* RipineningModel.swift */; };
+		60FF061427D5445E0058A116 /* RipeningData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FF061327D5445E0058A116 /* RipeningData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		60E79B30278DEBEF00CCBB78 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		60E79B32278DF62400CCBB78 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		60FF061127D543480058A116 /* RipineningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipineningModel.swift; sourceTree = "<group>"; };
+		60FF061327D5445E0058A116 /* RipeningData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				605CFAD02790C6C300879AE8 /* HeaderData.swift */,
 				608A383A2791CE1900CE898B /* FactData.swift */,
 				608A383E2791DCC600CE898B /* RecipeData.swift */,
+				60FF061327D5445E0058A116 /* RipeningData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				60A3775D27933ADD005D4E40 /* RecipeRatingView.swift in Sources */,
 				60E79B17278DDBA700CCBB78 /* ContentView.swift in Sources */,
 				60E79B31278DEBEF00CCBB78 /* AppView.swift in Sources */,
+				60FF061427D5445E0058A116 /* RipeningData.swift in Sources */,
 				60E79B2B278DEB7300CCBB78 /* RipeningStagesView.swift in Sources */,
 				60E79B15278DDBA700CCBB78 /* AVOCADOSApp.swift in Sources */,
 				60E79B29278DEB5300CCBB78 /* AvocadosView.swift in Sources */,
